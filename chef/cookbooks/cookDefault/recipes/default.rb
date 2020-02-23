@@ -10,5 +10,5 @@ template '/etc/motd' do
     variables ( :teamname => 'Managed by AL' )
     action :create
     owner 'root'
-    group 'roor'
+    group 'root'
 end

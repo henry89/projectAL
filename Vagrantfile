@@ -7,8 +7,12 @@ require "yaml"
 servers = YAML.load_file("./servers/servers.yml")
 
 Vagrant.configure("2") do |config|
+  
+  
+  # restrict server from updating upon creation
+  config.vbguest.auto_update = false
 
-  ### web servers ###
+  ### Web servers ###
   servers["webservers"].each do |host|
     config.vm.box = "ubuntu/bionic64"
     config.vm.define host['name'] do |define|
@@ -19,15 +23,16 @@ Vagrant.configure("2") do |config|
       define.vm.network "private_network", ip: host['ip']
       define.ssh.forward_agent = true
       define.vm.provision "chef_solo" do |chef|
-        chef.cookbooks_path = ["./chef/cookNginx","./chef/cookDefault", "./chef/cookWeb"]
-        chef.roles_path = "./chef/roles"
-        chef.add_role = 'webserver'
+        chef.arguments = "--chef-license accept"
+        chef.cookbooks_path = ["chef/cookbooks/cookNginx","chef/cookbooks/cookDefault", "chef/cookbooks/cookWeb"]
+        chef.roles_path = "chef/roles"
+        chef.add_role  ('webserver')
       end
     end
   end
- ### web servers end ###
+ ### Web servers end ###
 
-  ### load balancer  ###
+  ### Load balancer  ###
   servers["loadbalancer"].each do |host|
     config.vm.define host['name'] do |define|
       config.vm.box = "hashicorp/bionic64"
@@ -38,9 +43,10 @@ Vagrant.configure("2") do |config|
       define.vm.network "private_network", ip: host['ip']
       define.ssh.forward_agent = true
       define.vm.provision "chef_solo" do |chef|
-        chef.cookbooks_path = ["./chef/cookNginx","./chef/cookDefault"]
-        chef.roles_path = "./chef/roles"
-        chef.add_role = 'loadbalancer'
+        chef.arguments = "--chef-license accept"
+        chef.cookbooks_path = ["chef/cookbooks/cookNginx","chef/cookbooks/cookDefault"]
+        chef.roles_path = "chef/roles"
+        chef.add_role  ('loadbalancer')
       end
     end
   end
