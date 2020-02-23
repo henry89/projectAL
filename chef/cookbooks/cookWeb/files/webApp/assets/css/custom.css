@@ -1,0 +1,154 @@
+html {
+    overflow-x: hidden;
+    width: 100%;
+
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    zoom: 1;
+    background-color: #FFF;
+    color: #555;
+    letter-spacing: .75px;
+    line-height: 2.5rem;
+}
+
+.container {
+    max-width: 80vw;
+    margin: 0 auto;
+    z-index: 1;
+}
+.col-50 {
+    width: 50%;
+    float: left;
+}
+
+.col-30 {
+    width: 32%;
+    
+    float: left;
+}
+
+.col-30:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.main  {
+    height: 100vh;
+    text-align: center;
+
+}
+
+.main__top {
+    background: url('../img/cafe.png') center center no-repeat;
+    height: 35vh;
+    width: 100vw;
+    background-size: cover;
+    
+}
+
+.main__top-overlay {
+    height: 35vh;
+    width: 100vw;
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+}
+
+.main__title {
+    margin-top: 5vh;
+    text-align: center;
+    color: #FFF;
+}
+
+.main__title h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-family: 'Lobster', sans-serif;
+}
+
+.main__title h1:after {
+    content: '';
+    border-bottom: 2px solid white;
+    width: 10rem;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1rem;
+    
+}
+
+.main__title h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.main__brand img {
+    max-width: 30vw;
+}
+
+.search__form {
+    height: 9rem;
+    width: 30vw;
+    box-shadow: 0 0px 0px 1px #ccc;
+    border-radius: 1px;
+    margin-top: 10vh;
+    margin: 4rem auto;
+    padding: 1.5rem;
+    background-color: #FFF;
+}
+
+.search__form-group {
+    margin-top: 1rem;
+    position: relative;
+}
+
+
+
+.search__form-input {
+    border-radius: .3rem;
+    height: 3.6rem;
+    font-size: 1.5vw;
+    border: 1px solid #ccc;
+    padding: 0 .5rem;
+    width: 90%;
+    font-size: 80%
+}
+
+.search__form-input:focus {
+    background-color: inherit;
+}
+
+.search__form-button {
+    border-radius: .2rem;
+    outline: none;
+    background-color: #636e72;
+    color: #fff;
+    padding: .5rem 0;
+    font-size: 1.5vw;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    width: 60%;
+    text-align: center;
+}
+
+.search__form-button:hover,:focus {
+    background-color: #2d3436;
+}
+
+.coffee__mug {
+    opacity: 1;
+    background: url('../img/coffeeGif.gif') no-repeat;
+    transition: opacity .3s ease-in-out;
+    max-width: 30rem;
+    margin: 0 auto;
+    height: 30rem;
+}
+
+
+.coffee__mug-text {
+    transition: opacity 10s ease-in-out;
+}

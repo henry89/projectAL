@@ -9,8 +9,8 @@ servers = YAML.load_file("./servers/servers.yml")
 Vagrant.configure("2") do |config|
   
   
-  # restrict server from updating upon creation
-  config.vbguest.auto_update = false
+  # force update
+  config.vbguest.auto_update = true
 
   config.omnibus.chef_version = :latest
 

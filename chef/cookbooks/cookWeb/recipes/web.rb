@@ -1,5 +1,5 @@
 remote_directory "/var/www" do
-    source '~/projectAL/webApp'
+    source 'webApp'
     owner 'root'
     group 'root'
     mode '0755'

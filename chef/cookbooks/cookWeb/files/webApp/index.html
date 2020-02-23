@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find the closest restaurants in your area">
+    <title>Beano</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Work+Sans:400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    
+    <script src="./assets/js/custom.js"></script>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="main__top">
+        </div>
+        <div class="main__top-overlay">
+            <div class="container">
+                <div class="col-50">
+                    <div class="main__title">
+                        <h1>Beano</h1>
+                        <h3>Find a coffee shop near you! <br />
+                            <span>We've got you covered</span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <form class="search__form" action="/" method="post">
+                        <div class="search__form-group">
+                            <input type="text" name="search" id="search-js" class="search__form-input"
+                                placeholder="Enter Location..">
+                        </div>
+
+                        <div class="search__form-group">
+                            <button type="submit" class="search__form-button">Search Coffee Shop</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__content" id="main__content-js">
+            <div class="coffee__mug"></div>
+            <div class="coffee__mug-text"><small>This will get annoying</small></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
