@@ -1,13 +1,12 @@
-name cookNginx
+name 'cooknginx'
 maintainer 'Henry Akinola'
 maintainer_email 'henry@henry.com'
 licence 'Nginx'
 description  'Installs nginx on server'
-long_description IO.read(FILE.join(FILE.dirname(__FILE__), 'README.md'))
-vaersion 0.0.1
+long_description 'Installs nginx on server'
+vaersion '0.0.2'
 
-depends 'nginx'
 
 supports 'ubuntu'
-recipe 'cookNginx::default', 'Installs NGINX'
-recipe 'cookNginx::loadbalancer', 'Applies the loadbalancer configuration'
+recipe 'cooknginx::default', 'Installs NGINX'
+recipe 'cooknginx::loadbalancer', 'Applies the loadbalancer configuration'

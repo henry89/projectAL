@@ -12,9 +12,16 @@ Vagrant.configure("2") do |config|
   # restrict server from updating upon creation
   config.vbguest.auto_update = false
 
+  config.omnibus.chef_version = :latest
+
+  config.vm.provision "file",
+  source: "~/vagrant/files/git-config",
+  destination: "~/.gitconfig"
+
+
   ### Web servers ###
   servers["webservers"].each do |host|
-    config.vm.box = "ubuntu/bionic64"
+    config.vm.box = "hashicorp/bionic64"
     config.vm.define host['name'] do |define|
       define.vm.hostname = host['name']
       define.vm.provider "virtualbox" do |vb|
@@ -24,7 +31,8 @@ Vagrant.configure("2") do |config|
       define.ssh.forward_agent = true
       define.vm.provision "chef_solo" do |chef|
         chef.arguments = "--chef-license accept"
-        chef.cookbooks_path = ["chef/cookbooks/cookNginx","chef/cookbooks/cookDefault", "chef/cookbooks/cookWeb"]
+        chef.provisioning_path = "/var/chef"
+        chef.cookbooks_path = ["chef/cookbooks"]
         chef.roles_path = "chef/roles"
         chef.add_role  ('webserver')
       end
@@ -44,7 +52,8 @@ Vagrant.configure("2") do |config|
       define.ssh.forward_agent = true
       define.vm.provision "chef_solo" do |chef|
         chef.arguments = "--chef-license accept"
-        chef.cookbooks_path = ["chef/cookbooks/cookNginx","chef/cookbooks/cookDefault"]
+        chef.provisioning_path = "/var/chef"
+        chef.cookbooks_path = ["chef/cookbooks"]
         chef.roles_path = "chef/roles"
         chef.add_role  ('loadbalancer')
       end
