@@ -1,0 +1,11 @@
+#loadbalancer config
+loadbalancer: 
+  -name: loadbalancer
+    ip: 10.10.10.10
+
+#webserver config
+webservers: 
+-name: web01
+  ip: 192.168.10.10
+-name: web02
+  ip: 192.168.10.11
