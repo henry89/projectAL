@@ -2,11 +2,11 @@ name cookNginx
 maintainer 'Henry Akinola'
 maintainer_email 'henry@henry.com'
 licence 'Nginx'
-description  'Installs nginx on server'
+description  'Installs default configuration on server'
 long_description IO.read(FILE.join(FILE.dirname(__FILE__), 'README.md'))
-vaersion 0.0.1
+version 0.0.1
 
 depends 'nginx'
 
 supports 'ubuntu'
-recipe 'cookNginx::default', 'Installs NGINX'
+recipe 'cookDefault::default', 'Installs reuired software on all servers: ntp, vim and user configurations'
