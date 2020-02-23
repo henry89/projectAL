@@ -7,4 +7,4 @@ long_description 'Transfers web files in files directory to the server, updates 
 version '0.0.2'
 
 supports 'ubuntu'
-recipe 'cookweb::web', 'trnsfers web files and updates the nginx config'
+recipe 'cookweb::web', 'trnsfers web files and updates the nginx config and update nginx config with template file'

@@ -5,3 +5,8 @@ remote_directory "/var/www" do
     mode '0755'
     action :create
 end
+
+template '/etc/nginx/sites-available/default' do
+    source 'etc\nginx.erb'
+    action :create
+end
