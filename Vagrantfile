@@ -4,7 +4,7 @@
 #yaml module required for importing the settings stored in servers.yml
 require "yaml"
 
-servers = YAML.load_file(" ./servers/servers.yml")
+servers = YAML.load_file("./servers/servers.yml")
 
 Vagrant.configure("2") do |config|
 
