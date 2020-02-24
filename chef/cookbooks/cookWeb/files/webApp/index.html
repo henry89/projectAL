@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/custom.css">
     
-    <script src="./assets/js/custom.js"></script>
+    
 </head>
 
 <body>
@@ -20,35 +20,34 @@
         </div>
         <div class="main__top-overlay">
             <div class="container">
-                <div class="col-50">
+                <div style="width: 80%; margin: 0 auto;">
                     <div class="main__title">
                         <h1>Beano</h1>
-                        <h3>Find a coffee shop near you! <br />
-                            <span>We've got you covered</span>
+                        <h3>Find a coffee shop near you,
+                            <span>we got you covered</span>
                         </h3>
                     </div>
-                </div>
-                <div class="col-50">
-                    <form class="search__form" action="/" method="post">
+                    <form class="search__form" action="/" method="post" id="search__form-js">
                         <div class="search__form-group">
                             <input type="text" name="search" id="search-js" class="search__form-input"
                                 placeholder="Enter Location..">
                         </div>
-
                         <div class="search__form-group">
-                            <button type="submit" class="search__form-button">Search Coffee Shop</button>
+                            <button type="submit" class="search__form-button">Search Coffee</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
 
-        <div class="main__content" id="main__content-js">
+        <div class="main__content" id="coffee__content-js" style="width: 80%; margin: 0 auto 2rem auto; padding: 1rem;">
             <div class="coffee__mug"></div>
-            <div class="coffee__mug-text"><small>This will get annoying</small></div>
+            <div class="coffee__mug-text"><small>Hello World!</small></div>
         </div>
+        <div id="map"></div>
     </div>
-
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOZM5OOCrCStAHhENw2v7ChECvJyaynCQ&libraries=places"></script>
+    <script src="./assets/js/custom.js"></script>
 </body>
 
 </html>

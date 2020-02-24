@@ -61,22 +61,23 @@ body {
     margin-top: 5vh;
     text-align: center;
     color: #FFF;
+    font-family: 'Lobster', sans-serif;
 }
 
 .main__title h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    font-family: 'Lobster', sans-serif;
 }
 
 .main__title h1:after {
     content: '';
-    border-bottom: 2px solid white;
-    width: 10rem;
+    border-bottom: 3px solid white;
+    width: 15rem;
     display: block;
     margin: 0 auto;
     padding-top: 1rem;
+    margin-top: 1rem;
     
 }
 
@@ -91,13 +92,10 @@ body {
 
 .search__form {
     height: 9rem;
-    width: 30vw;
-    box-shadow: 0 0px 0px 1px #ccc;
-    border-radius: 1px;
+    width: 100%;
     margin-top: 10vh;
-    margin: 4rem auto;
     padding: 1.5rem;
-    background-color: #FFF;
+    margin: 0 auto;
 }
 
 .search__form-group {
@@ -118,7 +116,8 @@ body {
 }
 
 .search__form-input:focus {
-    background-color: inherit;
+    background-color: #fff;
+
 }
 
 .search__form-button {
@@ -131,8 +130,9 @@ body {
     font-weight: 500;
     cursor: pointer;
     border: none;
-    width: 60%;
+    max-width: 30rem;
     text-align: center;
+    padding: .5rem 1rem;
 }
 
 .search__form-button:hover,:focus {
