@@ -1,11 +1,14 @@
 server {
 
-    listen 80;
-    server_name <%= node['hostname'] %>
+    listen 3000;
+    server_name $host;
 
     root /var/www/;
 
     location /health {
-        return "200 <%= node['hostname'] node['ipaddress'] %> Status - OK";
+        return 200 '$hostname $server_addr Status - OK \n';
     }
 }
+
+#removed ruby interpolation and used nginx default vars
+#https://nginx.org/en/docs/varindex.html

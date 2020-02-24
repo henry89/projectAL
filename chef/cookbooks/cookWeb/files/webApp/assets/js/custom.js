@@ -39,7 +39,7 @@ async function initMap() {
         service.nearbySearch( {
             location: location,
             radius: 500,
-            type: 'restaurant'
+            type: 'cafe'
         }, showCoffeShops);
     });
 }

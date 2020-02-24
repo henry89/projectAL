@@ -1,7 +1,7 @@
 http {
    upstream backend {
-      server 192.168.10.10 max_fails=3 fail_timeout=20s; 
-      server 192.168.10.11;
+      server 192.168.10.10:3000 #max_fails=3 fail_timeout=20s; 
+      server 192.168.10.11:3000;
    }
 
    # This server accepts all traffic to port 80 and passes it to the upstream. 
@@ -9,7 +9,6 @@ http {
 
    server {
       listen 80; 
-
       location / {
           proxy_pass http://backend;
       }

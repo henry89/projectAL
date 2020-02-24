@@ -6,7 +6,7 @@ remote_directory "/var/www" do
     action :create
 end
 
-template '/etc/nginx/sites-available/default' do
+template '/etc/nginx/conf.d/web.conf' do
     source 'etc/nginx-default.erb'
     action :create
 end

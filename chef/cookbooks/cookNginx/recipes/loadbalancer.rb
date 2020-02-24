@@ -2,7 +2,7 @@
 
 
 #overwritting the default nginx server configuratio
-template '/etc/nginx/sites-available/default' do
+template '/etc/nginx/conf.d/load-balancer.conf' do
     source 'etc/nginx-default.erb'
     action :create
 end
