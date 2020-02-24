@@ -7,6 +7,6 @@ remote_directory "/var/www" do
 end
 
 template '/etc/nginx/sites-available/default' do
-    source 'etc\nginx-default.erb'
+    source 'etc/nginx-default.erb'
     action :create
 end

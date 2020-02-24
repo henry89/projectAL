@@ -1,11 +1,11 @@
 server {
 
     listen 80;
-    server_name <%= node['hostname'] =cat ;
+    server_name <%= node['hostname'] %>
 
     root /var/www/;
 
     location /health {
-        return 200 'node['hostname'] node['ipaddress'] Status - OK';
+        return "200 <%= node['hostname'] node['ipaddress'] %> Status - OK";
     }
 }
