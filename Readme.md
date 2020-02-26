@@ -194,7 +194,7 @@ Providing no error found running the above commands, install the required plugin
     Select **Git** **bash** you should be presented with a terminal screen
 
 4.  Make sure you are in a directory you wish to store the project files
-    in. type **pwd** and press enter. This will show you the current
+    in. type **<code>pwd</code>** and press enter. This will show you the current
     directory you are in (Git bash usually opens in youre the root of
     your home directory)
 
@@ -208,7 +208,7 @@ Providing no error found running the above commands, install the required plugin
 
 > ![](media/image8.png)
 
-7.  Navigate to the cloned folder. Type: **<code>cd projectAL<code>**
+7.  Navigate to the cloned folder. Type: **<code>cd projectAL</code>**
 
 ![](media/image9.png)
 
