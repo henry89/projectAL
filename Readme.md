@@ -1,7 +1,7 @@
 Project requirements**:**
 -------------------------
 
-![](media/image1.jpg){width="4.5in" height="3.0104166666666665in"}
+![](media/image1.png)
 
 **2x Web servers** -- Hosting a web app (**Beano -- find a cafe near you
 using google places API**)
@@ -53,8 +53,7 @@ VirtualBox -- Installation steps
 
 1.  Select \> <https://www.virtualbox.org/wiki/Downloads>
 
-![](media/image2.png){width="6.177083333333333in"
-height="3.3854166666666665in"}
+![](media/image2.png)
 
 2.  Once downloaded navigate to your downloads folder and run the
     installation
@@ -95,8 +94,7 @@ Manages Virtual machines,
 
 **In use version 2.2.7**
 
-![](media/image3.png){width="6.268055555555556in"
-height="0.5229166666666667in"}
+![](media/image3.png)
 
  
 
@@ -122,7 +120,7 @@ collaborate, as they can download a new version of the software, make
 changes, and upload the newest revision. Every developer can see these
 new changes, download them, and contribute.
 
-![](media/image4.png){width="6.268055555555556in" height="2.46875in"}
+![](media/image4.png)
 
 Download Git installed from <https://git-scm.com/downloads> 
 
@@ -171,8 +169,7 @@ used in steps shown**
 
 1.  Select **Start button** \> type (**Git bash**)
 
-![](media/image5.png){width="4.479166666666667in"
-height="3.703472222222222in"}
+![](media/image5.png)
 
 2.  ![](media/image6.png){width="5.0in"
     height="1.5798611111111112in"}Select **Git** **bash** you should be
@@ -192,13 +189,11 @@ height="3.703472222222222in"}
 5.  Type: **git clone <https://github.com/henry89/projectAL.git> and
     press enter. Desired outcome below**
 
-> ![](media/image8.png){width="6.268055555555556in"
-> height="1.3229166666666667in"}
+> ![](media/image8.png)
 
 6.  Navigate to the cloned folder. Type: **cd projectAL**
 
-![](media/image9.png){width="5.521604330708661in"
-height="0.8438681102362204in"}
+![](media/image9.png)
 
 7.  Providing that the pre-requisites install and setup has been
     completed, you should now be able to simply type: **vagrant up** in
@@ -209,8 +204,7 @@ height="0.8438681102362204in"}
 **The install should take around 10 minutes to deploy. Once completed
 you should be met with the following screen**
 
-![](media/image11.png){width="6.042509842519685in"
-height="1.5835542432195975in"}
+![](media/image11.png)
 
 Testing the web App (Web browser)
 ---------------------------------
@@ -219,19 +213,17 @@ Testing the web App (Web browser)
 
 > You should be presented with the following webpage
 >
-> ![](media/image12.png){width="3.4791666666666665in"
-> height="2.6145833333333335in"}
+> ![](media/image12.png)
 
 -   You can now type in and search a location within the input
 
-![](media/image13.png){width="3.3125in" height="2.5381944444444446in"}
+![](media/image13.png)
 
 -   Upon selecting your location, you will be able to see a list off
     cafes with in a 500m radius of the specified address. (Asynchronous
     request -- no page refresh)
 
-> ![](media/image14.png){width="3.6770833333333335in"
-> height="2.2916666666666665in"}
+> ![](media/image14.png)
 
 Testing the Web App (Shell Script)
 ----------------------------------
@@ -239,19 +231,17 @@ Testing the Web App (Shell Script)
 Within the files/folders cloned from the git repository, there is a
 directory called scripts in the root folder
 
-![](media/image15.png){width="6.268055555555556in"
-height="1.5722222222222222in"}
+![](media/image15.png)
 
 1.  **Open** the scripts directory
 
 2.  **Double click** on the **web-health** shell script
 
-![](media/image16.png){width="3.760941601049869in"
-height="0.8751224846894138in"}
+![](media/image16.png)
 
 The following screen should show with the output results of the test
 
-![](media/image17.png){width="6.268055555555556in" height="3.6875in"}
+![](media/image17.png)
 
 Providing that requests where successful you should see a success
 message of status ok on all checks
