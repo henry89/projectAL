@@ -29,6 +29,7 @@ applied to the servers)
 
 **Test Script --** shell script to test the deployed web apps
 
+
 Pre-requisites
 ==============
 
@@ -36,6 +37,7 @@ Pre-requisites
 to use the same version stated in this document. The steps shown is on a
 windows device, however providing the same tools and versions installed,
 should produce the same result.**
+
 
 Enable virtualisation on PC (Windows Only)
 ------------------------------------------
@@ -45,6 +47,7 @@ machines on your machine. The guide below provides good clear
 instructions on how to enable this feature
 
 <https://mashtips.com/enable-virtualization-windows-10/>
+
 
 VirtualBox -- Installation steps
 --------------------------------
@@ -62,6 +65,7 @@ VirtualBox -- Installation steps
     interfaces select **Yes**
 
 4.  On The last screen select **Finish** to complete
+
 
 Vagrant -- Installation steps
 -----------------------------
@@ -110,6 +114,7 @@ Manages Virtual machines,
 Vagrant plugins -- ominubus, berkshelf (optional no community cookbooks
 used)
 
+
 Git - Installation steps (Command line Tool)
 --------------------------------------------
 
@@ -131,6 +136,7 @@ Download Git installed from <https://git-scm.com/downloads> 
 
 3.  Select **Next** all the way through (**I Suggest to keep all the
     shortcut options checked**)
+
 
 Chef-solo and not Chef Server?
 ==============================
@@ -155,6 +161,7 @@ configurations on the servers.
 
 **Manual Install is not required as this will be done at deployment
 phase.**
+
 
 Git Repository -- Clone Project
 ===============================
@@ -206,6 +213,7 @@ you should be met with the following screen**
 
 ![](media/image11.png)
 
+
 Testing the web App (Web browser)
 ---------------------------------
 
@@ -215,7 +223,7 @@ Testing the web App (Web browser)
 >
 > ![](media/image12.png)
 
--   You can now type in and search a location within the input
+-   You can now type in and search a location within the form input
 
 ![](media/image13.png)
 
@@ -224,6 +232,7 @@ Testing the web App (Web browser)
     request -- no page refresh)
 
 > ![](media/image14.png)
+
 
 Testing the Web App (Shell Script)
 ----------------------------------
