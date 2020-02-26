@@ -184,15 +184,15 @@ used in steps shown**
 
     Select **Git** **bash** you should be presented with a terminal screen
     
-3. To confirm the pre-reqs has been installed, type in the following commands
+3. To confirm the pre-reqs has been installed, type in the commands below
 
 command: <code>vagrant --version</code> Confirms vagrant is installed if version shown <br>
 command: <code>vboxmanage --version</code> Confirms Virtualbox is installed if version shown <br>
-command (if not using git bash): <code>git --version</code> Confirms git is installed if version shown <br>
+command: (if not using git bash): <code>git --version</code> Confirms git is installed if version shown <br>
 
-**Providing no error found running the above commands, install the required plugins for vagrant:** <br>
-    <code>vagrant plugin install vagrant-omnibus</code><br>
-    <code>vagrant plugin install vagrant-vbguest</code>
+**Providing no error found running the above commands, while still in your terminal session install the required plugins for vagrant using the commands listed below :** <br> <br>
+command: <code>vagrant plugin install vagrant-omnibus</code><br>
+command: <code>vagrant plugin install vagrant-vbguest</code>
 
 4.  Make sure you are in a directory you wish to store the project files
     in. type **<code>pwd</code>** and press enter. This will show you the current
