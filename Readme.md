@@ -247,3 +247,7 @@ Providing that requests where successful you should see a success
 message of status ok on all checks
 
 *web02/01 192.168.10.11 Status - OK*
+
+Further information regarding configuration can be found in the documentation
+----------------------------------
+
