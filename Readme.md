@@ -49,7 +49,7 @@ instructions on how to enable this feature
 <https://mashtips.com/enable-virtualization-windows-10/>
 
 
-VirtualBox -- Installation steps
+VirtualBox - Installation steps
 --------------------------------
 
 **In use version 6.1**
@@ -67,7 +67,7 @@ VirtualBox -- Installation steps
 4.  On The last screen select **Finish** to complete
 
 
-Vagrant -- Installation steps
+Vagrant - Installation steps
 -----------------------------
 
 *Vagrant is a tool for building and managing virtual machine
@@ -163,7 +163,7 @@ configurations on the servers.
 phase.**
 
 
-Git Repository -- Clone Project
+Git Repository - Clone Project
 ===============================
 
 Now that we have the tools that will be used out of the way. Next up is
@@ -174,15 +174,6 @@ You can either use your command prompt or simply use the terminal
 installed with the previous Git Bash install. **Git Bash** **Terminal
 used in steps shown**
 
-To confirm the pre-reqs has been installed
-
-command: <code>vagrant --version</code> Check vagrant is installed and version <br>
-command: <code>vboxmanage --version</code> Check Virtualbox version <br>
-command (if not using git bash): <code>git --version</code> Confirms git is installed <br>
-
-Providing no error found running the above commands, install the required plugins for vagrant: <br>
-    <code>vagrant plugin install vagrant-omnibus</code><br>
-    <code>vagrant plugin install vagrant-vbguest</code>
 
 
 1.  Select **Start button** \> type (**Git bash**)
@@ -192,6 +183,16 @@ Providing no error found running the above commands, install the required plugin
 2.  ![](media/image6.png)
 
     Select **Git** **bash** you should be presented with a terminal screen
+    
+3. To confirm the pre-reqs has been installed
+
+command: <code>vagrant --version</code> Confirms vagrant is installed if version shown <br>
+command: <code>vboxmanage --version</code> Confirms Virtualbox is installed if version shown <br>
+command (if not using git bash): <code>git --version</code> Confirms git is installed if version shown <br>
+
+**Providing no error found running the above commands, install the required plugins for vagrant:** <br>
+    <code>vagrant plugin install vagrant-omnibus</code><br>
+    <code>vagrant plugin install vagrant-vbguest</code>
 
 4.  Make sure you are in a directory you wish to store the project files
     in. type **<code>pwd</code>** and press enter. This will show you the current
