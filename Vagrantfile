@@ -16,11 +16,6 @@ Vagrant.configure("2") do |config|
 
   config.omnibus.chef_version = :latest
 
-  config.vm.provision "file",
-  source: "~/vagrant/files/git-config",
-  destination: "~/.gitconfig"
-
-
   ### Web servers ###
   servers["webservers"].each do |host|
     config.vm.box = "hashicorp/bionic64"

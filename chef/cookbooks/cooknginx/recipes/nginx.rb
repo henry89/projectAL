@@ -34,4 +34,4 @@ end
 
 
 #resource to replace line
-#https://github.com/jenssegers/chef-patch
+#https://stackoverflow.com/questions/14848110/how-can-i-change-a-file-with-chef
