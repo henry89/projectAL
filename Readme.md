@@ -39,7 +39,7 @@ windows device, however providing the same tools and versions installed,
 should produce the same result.**
 
 
-Enable virtualisation on PC (Windows Only)
+Enable virtualisation (Windows Only)
 ------------------------------------------
 
 This is required to allow the ability of being able to run virtual
