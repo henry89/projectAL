@@ -12,5 +12,5 @@ template '/etc/nginx/conf.d/web.conf' do
 end
 
 service 'nginx' do
-    :restart
+    action [ :enable, :restart ]
 end

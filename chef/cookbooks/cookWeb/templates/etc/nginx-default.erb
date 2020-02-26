@@ -6,7 +6,7 @@ server {
     root /var/www/;
 
     location /health {
-        return 200 '$hostname $server_addr Status - OK \n';
+        return 200 '\n $hostname $server_addr Status - OK \n';
     }
 }
 

@@ -1,12 +1,12 @@
 #this will have the loadbalancer configuration
 
 
-#overwritting the default nginx server configuratio
+#creating the load-balancer configuration file
 template '/etc/nginx/conf.d/load-balancer.conf' do
     source 'etc/nginx-default.erb'
     action :create
 end
 
 service 'nginx' do
-    :restart
+    action [ :enable, :restart ]
 end

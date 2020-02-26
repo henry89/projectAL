@@ -6,8 +6,10 @@ require "yaml"
 
 servers = YAML.load_file("./servers/servers.yml")
 
+
 Vagrant.configure("2") do |config|
   
+  # config.vagrant.plugins = ["vagrant-vbguest", "vagrant-omnibus", "vagrant-berkself"] 
   
   # force update
   config.vbguest.auto_update = true
