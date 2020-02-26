@@ -138,7 +138,7 @@ Download Git installed from <https://git-scm.com/downloads> 
     shortcut options checked**)
 
 
-Chef-solo and not Chef Server?
+Chef-solo?
 ==============================
 
 [[https://blog.differentpla.net/blog/2014/11/13/which-chef/]{.underline}](https://blog.differentpla.net/blog/2014/11/13/which-chef/)
