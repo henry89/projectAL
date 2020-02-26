@@ -174,6 +174,17 @@ You can either use your command prompt or simply use the terminal
 installed with the previous Git Bash install. **Git Bash** **Terminal
 used in steps shown**
 
+To confirm the pre-reqs has been installed
+
+command: <code>vagrant --version</code> Check vagrant is installed and version <br>
+command: <code>vboxmanage --version</code> Check Virtualbox version <br>
+command (if not using git bash): <code>git --version</code> Confirms git is installed <br>
+
+Providing no error found running the above commands, install the required plugins for vagrant: <br>
+    <code>vagrant plugin install vagrant-omnibus</code><br>
+    <code>vagrant plugin install vagrant-vbguest</code>
+
+
 1.  Select **Start button** \> type (**Git bash**)
 
 ![](media/image5.png)
@@ -182,27 +193,27 @@ used in steps shown**
 
     Select **Git** **bash** you should be presented with a terminal screen
 
-3.  Make sure you are in a directory you wish to store the project files
+4.  Make sure you are in a directory you wish to store the project files
     in. type **pwd** and press enter. This will show you the current
     directory you are in (Git bash usually opens in youre the root of
     your home directory)
 
 > ![](media/image7.png)
 
-4.  ***Optional step: if you prefer to load files in your Documents
-    folder simply type cd \~/Documents***
+5.  ***Optional step: if you prefer to load files in your Documents
+    folder simply type <code>cd \~/Documents</code>***
 
-5.  Type: **git clone <https://github.com/henry89/projectAL.git> and
+6.  Type: **<code>git clone <https://github.com/henry89/projectAL.git></code> then
     press enter. Desired outcome below**
 
 > ![](media/image8.png)
 
-6.  Navigate to the cloned folder. Type: **cd projectAL**
+7.  Navigate to the cloned folder. Type: **<code>cd projectAL<code>**
 
 ![](media/image9.png)
 
 7.  Providing that the pre-requisites install and setup has been
-    completed, you should now be able to simply type: **vagrant up** in
+    completed, you should now be able to simply type: **<code>vagrant up</code>** in
     the terminal window
 
 ![](media/image10.png)
@@ -255,6 +266,11 @@ Providing that requests where successful you should see a success
 message of status ok on all checks
 
 *web02/01 192.168.10.11 Status - OK*
+
+Troubleshooting
+----------------------------------
+Issues found when testing on Mac
+https://stackoverflow.com/questions/21069908/vboxmanage-error-failed-to-create-the-host-only-adapter
 
 Further information regarding configuration can be found in the documentation
 ----------------------------------
