@@ -273,6 +273,6 @@ Troubleshooting
 Issues found when testing on Mac
 https://stackoverflow.com/questions/21069908/vboxmanage-error-failed-to-create-the-host-only-adapter
 
-Further information regarding configuration can be found in the documentation
+Further information regarding configuration can be found in the <a href="https://github.com/henry89/projectAL/tree/master/Documentation">Documentation directory</a>
 ----------------------------------
 
