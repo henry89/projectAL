@@ -184,7 +184,7 @@ used in steps shown**
 
     Select **Git** **bash** you should be presented with a terminal screen
     
-3. To confirm the pre-reqs has been installed
+3. To confirm the pre-reqs has been installed, type in the following commands
 
 command: <code>vagrant --version</code> Confirms vagrant is installed if version shown <br>
 command: <code>vboxmanage --version</code> Confirms Virtualbox is installed if version shown <br>
