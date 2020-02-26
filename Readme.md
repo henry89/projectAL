@@ -1,4 +1,4 @@
-Project requirements**:**
+Project AL requirements
 -------------------------
 
 ![](media/image1.png)
