@@ -178,8 +178,9 @@ used in steps shown**
 
 ![](media/image5.png)
 
-2.  ![](media/image6.png)Select **Git** **bash** you should be
-    presented with a terminal screen
+2.  ![](media/image6.png)
+
+    Select **Git** **bash** you should be presented with a terminal screen
 
 3.  Make sure you are in a directory you wish to store the project files
     in. type **pwd** and press enter. This will show you the current
