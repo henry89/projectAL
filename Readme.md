@@ -178,8 +178,7 @@ used in steps shown**
 
 ![](media/image5.png)
 
-2.  ![](media/image6.png){width="5.0in"
-    height="1.5798611111111112in"}Select **Git** **bash** you should be
+2.  ![](media/image6.png)Select **Git** **bash** you should be
     presented with a terminal screen
 
 3.  Make sure you are in a directory you wish to store the project files
@@ -187,8 +186,7 @@ used in steps shown**
     directory you are in (Git bash usually opens in youre the root of
     your home directory)
 
-> ![](media/image7.png){width="6.167527340332459in"
-> height="0.9272123797025372in"}
+> ![](media/image7.png)
 
 4.  ***Optional step: if you prefer to load files in your Documents
     folder simply type cd \~/Documents***
@@ -206,7 +204,7 @@ used in steps shown**
     completed, you should now be able to simply type: **vagrant up** in
     the terminal window
 
-![](media/image10.png){width="5.7882206911636045in" height="2.46875in"}
+![](media/image10.png)
 
 **The install should take around 10 minutes to deploy. Once completed
 you should be met with the following screen**
