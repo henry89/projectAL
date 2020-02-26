@@ -24,7 +24,7 @@ servers with associated files using a simple ***vagrant up*** command
  
 
 **Chef** -- Will be used as the infrastructure configuration manager
-(cookbooks *no pun*, will be distributed to the servers based on roles
+(cookbooks, will be distributed to the servers based on roles
 applied to the servers)
 
 **Test Script --** shell script to test the deployed web apps
